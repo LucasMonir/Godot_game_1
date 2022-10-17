@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/GameOver.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/QuitButton.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="InputEventJoypadButton" id=1]
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+__meta__ = {
+"_edit_vertical_guides_": [ -383.0 ]
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 3 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_right = 1024.0
+margin_bottom = 645.0
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 645.0
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer/MarginContainer/Rows"]
+margin_right = 1024.0
+margin_bottom = 621.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows"]
+margin_top = 625.0
+margin_right = 1024.0
+margin_bottom = 645.0
+shortcut = SubResource( 2 )
+text = "QUIT GAME"
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/QuitButton" to="PanelContainer/MarginContainer/Rows/QuitButton" method="_on_QuitButton_pressed"]

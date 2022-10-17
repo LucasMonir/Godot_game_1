@@ -1,7 +1,7 @@
 extends "res://Scripts/EntityBase.gd"
 
 func _ready():
-	screensize = get_viewport_rect().size
+	pass
 
 func _process(delta):
 	velocity = Vector2.ZERO

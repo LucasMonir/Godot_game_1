@@ -47,7 +47,9 @@ func shoot():
 
 
 func _on_Hurtbox_area_entered(hitbox):
-	var base_damage = hitbox.damage
+	var base_damage = 0
+	if "damage" in hitbox:
+		base_damage = hitbox.damage
 	self.hp -= base_damage
 	hitbox.destroy()
 	print("current HP is:" + str(self.hp))
