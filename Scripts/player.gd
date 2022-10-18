@@ -19,10 +19,14 @@ func _process(delta):
 		$AnimatedSprite.animation = "Left"
 	if velocity.length() > 0:
 		var info = move_and_collide(velocity * delta)
+	if get_tree().get_nodes_in_group("Enemy").size() == 0:
+		get_tree().change_scene("res://Scenes/GameOver.tscn")	
 	
 func _unhandled_input(ev):
 	if (ev is InputEventKey and ev.scancode == KEY_SPACE):
 		shoot()
 
 func die():
+	get_tree().change_scene("res://Scenes/GameOver.tscn")	
 	queue_free()
+

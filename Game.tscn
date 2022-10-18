@@ -47,13 +47,13 @@ limit_right = 1217
 limit_bottom = 1000
 script = SubResource( 1 )
 
-[node name="Enemy 1" parent="." instance=ExtResource( 5 )]
+[node name="Enemy 1" parent="." groups=["Enemy"] instance=ExtResource( 5 )]
 position = Vector2( 625, 518 )
 
-[node name="Enemy 2" parent="." instance=ExtResource( 5 )]
+[node name="Enemy 2" parent="." groups=["Enemy"] instance=ExtResource( 5 )]
 position = Vector2( 425, 518 )
 
-[node name="Enemy 3" parent="." instance=ExtResource( 5 )]
+[node name="Enemy 3" parent="." groups=["Enemy"] instance=ExtResource( 5 )]
 position = Vector2( 206, 267 )
 
 [editable path="Player"]
