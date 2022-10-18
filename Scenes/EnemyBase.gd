@@ -20,7 +20,6 @@ func _process(delta):
 func _on_Authoshoot_Timer_timeout():
 	shoot()
 
-
 func _get_random_direction():
 	var last_dir = current_dir
 	rng.randomize()

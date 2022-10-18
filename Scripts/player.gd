@@ -24,9 +24,13 @@ func _process(delta):
 	
 func _unhandled_input(ev):
 	if (ev is InputEventKey and ev.scancode == KEY_SPACE):
-		shoot()
-
+		shoot()	
+		
 func die():
-	get_tree().change_scene("res://Scenes/GameOver.tscn")	
+	if $Death.playing == false:
+			$Death.play()
+	yield($Death, "finished")
 	queue_free()
+	get_tree().change_scene("res://Scenes/GameOver.tscn")	
+	
 
