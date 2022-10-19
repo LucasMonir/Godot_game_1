@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pew_chris_3.mp3-32b872115c6acf2d6e5c884a8bc21e9f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Pew_chris_3.mp3"
+dest_files=[ "res://.import/Pew_chris_3.mp3-32b872115c6acf2d6e5c884a8bc21e9f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

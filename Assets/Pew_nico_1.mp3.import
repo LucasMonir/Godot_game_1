@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pew_nico_1.mp3-b4714af5f09a7a696f7a95ea5e35d851.mp3str"
+
+[deps]
+
+source_file="res://Assets/Pew_nico_1.mp3"
+dest_files=[ "res://.import/Pew_nico_1.mp3-b4714af5f09a7a696f7a95ea5e35d851.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

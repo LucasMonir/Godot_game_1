@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Pew_nicoly_2.mp3-d8c92e507f6ab3d5e9025e019d5f7ed9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Pew_nicoly_2.mp3"
+dest_files=[ "res://.import/Pew_nicoly_2.mp3-d8c92e507f6ab3d5e9025e019d5f7ed9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
