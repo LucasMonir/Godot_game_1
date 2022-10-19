@@ -24,19 +24,11 @@ func _process(delta):
 
 func _unhandled_input(ev):
 	if (ev is InputEventKey and ev.scancode == KEY_SPACE):
-		shoot()	
-		var rand = floor(rand_range(0, 4))
+		shoot()
 		if not is_playing():
-			if rand == 1 :
-				$Shot.play()
-			elif rand == 2:
-				$Shot2.play()
-			elif rand == 3:
-				$Shot3.play()
-			elif rand == 4:
-				$Shot4.play()
-			else:
-				$Shot5.play()
+			var rand = floor(rand_range(0, 4))
+			[$Shot, $Shot2, $Shot3, $Shot4, $Shot5][rand].play()
+		
 
 func is_playing():
 	return $Shot.playing || $Shot2.playing || $Shot3.playing || $Shot4.playing || $Shot5.playing
